@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:lts
 MAINTAINER Georgi Spasov <gspasov2@gmail.com>
 
-# Install git, Oracle Java8
+# Install maven, Oracle Java8
 USER root
 RUN apt-get -y update && apt-get -y upgrade && \
     apt-get install -y maven && \
